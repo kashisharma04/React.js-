@@ -8,14 +8,14 @@ function App() {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    setName(e.target.elements.name.value)
+    setName(e.target.elements.name.value)   
     setEmail(e.target.elements.email.value)
     setDOB(e.target.elements.dob.value)
     setContact(e.target.elements.contact.value)
   }
   return (
     <div className='contanier'>
-      <form className="data" onSubmit={handleSubmit}>
+      <form className="data" onSubmit={handleSubmit}> 
           <input type="text" className="name"   name="name" placeholder="Name" required />
           <br></br><br></br>
           <input type="email" className="name" name="email" placeholder="Email Id" required/>
